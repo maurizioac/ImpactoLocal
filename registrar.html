@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regístrate — ImpactoLOCAL</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-logo">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="13" cy="13" r="13" fill="#1B4332"/>
+        <path d="M8 14.5C8 10.9 10.9 8 14.5 8H18V11.5C18 15.1 15.1 18 11.5 18H8V14.5Z" fill="#F0B429"/>
+      </svg>
+      Impacto<span>LOCAL</span>
+    </a>
+    <div class="navbar-right">
+      <a href="registrar.html" class="navbar-login">Iniciar Sesión</a>
+    </div>
+  </nav>
+
+  <div class="subnav-bar" style="padding-top:0;">
+    <div class="subnav">
+      <a href="index.html">Principal 🏡</a>
+      <a href="descubre.html">Descubre ❔</a>
+      <a href="solicitudes.html">Solicitudes ⓘ</a>
+    </div>
+  </div>
+
+  <header class="page-hero" style="padding-bottom:70px;">
+    <div class="wrap">
+      <span class="eyebrow" style="background:rgba(255,255,255,.12); color:#fff; border:1px solid rgba(255,255,255,.22);">Únete a la red</span>
+      <h1>Crea tu cuenta en ImpactoLOCAL</h1>
+      <p>Regístrate como voluntario o como organización y forma parte del ecosistema auditable de acción social del Perú.</p>
+    </div>
+  </header>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <form class="form-shell">
+        <div class="toggle-tipo">
+          <button type="button" class="activo" id="btn-voluntario">Soy Voluntario</button>
+          <button type="button" id="btn-organizacion">Soy Organización / ONG</button>
+        </div>
+
+        <div class="campo">
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" required>
+        </div>
+
+        <div class="campo-2">
+          <div class="campo">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+          </div>
+          <div class="campo">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="••••••••" required>
+          </div>
+        </div>
+
+        <div class="campo-2">
+          <div class="campo">
+            <label for="numero">Número de contacto</label>
+            <input type="tel" id="numero" name="numero" placeholder="+51 9 00 000 000" required>
+          </div>
+          <div class="campo">
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni" placeholder="8 dígitos" maxlength="8" required>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="ocupacion">Ocupación</label>
+          <select id="ocupacion" name="ocupacion">
+            <option>Estudiante</option>
+            <option>Profesional independiente</option>
+            <option>Docente</option>
+            <option>Representante de ONG</option>
+            <option>Otro</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn--naranja btn--block">Crear mi cuenta →</button>
+        <p class="form-nota">Al registrarte aceptas nuestros <a href="#">Términos del Servicio</a> y nuestra <a href="#">Política de Privacidad</a>.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">Impacto<span>LOCAL</span></div>
+          <p>Plataforma orientada a la democratización del acceso a financiamiento ético, talento voluntario y cooperación transparente para entidades sin fines de lucro en el Perú.</p>
+        </div>
+        <div class="footer-col">
+          <h4>REFERENCIAS Y FUENTES CONSULTADAS</h4>
+          <ul class="footer-refs">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              MIMP — Ministerio de la Mujer y Poblaciones Vulnerables, Dirección de Voluntariado.
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              IDEHPUCP (2024) — Pontificia Universidad Católica del Perú.
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              USMP 2026 · II — Proyecto de Responsabilidad Social Universitaria.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ImpactoLOCAL Perú. Todos los derechos reservados.</span>
+        <nav>
+          <a href="#">Términos del Servicio</a>
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Auditoría Ciudadana</a>
+          <a href="#">Contacto Institucional</a>
+        </nav>
+        <span>Lima, Perú</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const bVol = document.getElementById('btn-voluntario');
+    const bOrg = document.getElementById('btn-organizacion');
+    bVol.addEventListener('click', () => { bVol.classList.add('activo'); bOrg.classList.remove('activo'); });
+    bOrg.addEventListener('click', () => { bOrg.classList.add('activo'); bVol.classList.remove('activo'); });
+  </script>
+
+</body>
+</html>

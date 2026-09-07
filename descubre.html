@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre organizaciones - ImpactoLOCAL</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FontAwesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <i class="fa-solid fa-globe logo-icon"></i>
+            <span class="logo-text">Impacto<strong>LOCAL</strong></span>
+            <span class="logo-sub">TRANSPARENCIA & ACCIÓN SOCIAL PERÚ</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Principal</a>
+            <a href="descubre.html" class="active">Descubre</a>
+            <a href="solicitudes.html">Solicitudes</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="btn-login">Iniciar Sesión</a>
+            <a href="registrar.html" class="btn-register">Regístrate</a>
+            <a href="#" class="user-avatar-btn" aria-label="Mi cuenta"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+
+    <main class="discover-container">
+
+        <form class="search-pill-bar" id="searchForm" action="descubre.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" name="q" autocomplete="off" placeholder="Busca por nombre, causa, etiqueta o región...">
+            <button type="button" class="search-plus-btn" aria-label="Filtros avanzados"><i class="fa-solid fa-plus"></i></button>
+        </form>
+
+        <div class="meta-row">
+            <div class="meta-left">
+                <span class="meta-dot"></span>
+                <span>Mostrando <strong id="resultsCount">28 ONGs auditadas</strong> en Perú</span>
+                <span class="meta-sep">•</span>
+                <span class="meta-chip">Filtro: Amazonía & Andes</span>
+                <span class="meta-chip meta-chip--verde">Sello de Transparencia 100%</span>
+            </div>
+            <div class="meta-sort">Ordenar por: <strong>Mayor índice de confianza</strong> <i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+
+        <div class="info-banner">
+            <div class="icon-badge"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="info-banner-text">
+                <h3>Directorio Verificado y de Acceso Abierto</h3>
+                <p>Todas las organizaciones aquí listadas cuentan con documentación validada ante APCI, SUNAT y reportes de rendición de cuentas actualizados 2024.</p>
+            </div>
+            <a href="#" class="info-banner-link">Ver metodología de auditoría →</a>
+        </div>
+
+        <div class="org-list" id="orgList">
+
+            <article class="org-card-row">
+                <div class="org-card-content">
+                    <div class="org-card-top">
+                        <span class="audit-badge"><i class="fa-solid fa-circle-check"></i> Auditoría Social 100%</span>
+                        <span class="org-card-location">Lima, Perú (Cobertura Nacional)</span>
+                    </div>
+                    <h3><a href="organizacion.html">Greenpeace Perú</a></h3>
+                    <p>Organización civil independiente e internacional de defensa del medio ambiente, la justicia climática y la biodiversidad marina y territorial del Perú. Investiga, expone y conforma alianzas ambientales a través de campañas de concientización, acción pacífica ciudadana y escalación territorial comunitaria en la Amazonía y el litoral peruano.</p>
+                    <div class="org-tags">
+                        <span class="org-tag"><i class="fa-solid fa-satellite-dish"></i> Acción Climática</span>
+                        <span class="org-tag"><i class="fa-solid fa-water"></i> Biodiversidad Marina</span>
+                        <span class="org-tag"><i class="fa-solid fa-tree"></i> Defensa Amazónica</span>
+                    </div>
+                    <div class="org-card-actions">
+                        <a href="organizacion.html" class="org-card-cta">Ver perfil y balance financiero →</a>
+                        <a href="organizacion.html" class="org-card-secondary">Postular al Voluntariado</a>
+                    </div>
+                </div>
+                <div class="org-card-media">
+                    <img src="imagenes/personas.png" alt="Trabajo de campo Greenpeace Perú">
+                    <span class="photo-tag-floating">Fotografía Verificada</span>
+                </div>
+            </article>
+
+            <article class="org-card-row">
+                <div class="org-card-content">
+                    <div class="org-card-top">
+                        <span class="audit-badge"><i class="fa-solid fa-circle-check"></i> Auditoría Social 100%</span>
+                        <span class="org-card-location">Loreto, Perú</span>
+                    </div>
+                    <h3><a href="organizacion.html">Kallpa Iquitos - Conservación & Reforestación</a></h3>
+                    <p>Iniciativa civil dedicada a la preservación del ecosistema amazónico en la cuenca del río Nanay. Impulsamos brigadas de reforestación comunitaria con especies nativas, programas de vigilancia ambiental con pueblos originarios y educación ecológica escolar en más de 18 caseríos ribereños, logrando resembrar más de 45,000 plantones en el último ejercicio fiscal.</p>
+                    <div class="org-tags">
+                        <span class="org-tag"><i class="fa-solid fa-seedling"></i> Agroforestería</span>
+                        <span class="org-tag"><i class="fa-solid fa-hands-holding-child"></i> Voluntariado Activo</span>
+                        <span class="org-tag"><i class="fa-solid fa-location-dot"></i> Cuenca Amazónica</span>
+                    </div>
+                    <div class="org-card-actions">
+                        <a href="organizacion.html" class="org-card-cta">Ver perfil y balance financiero →</a>
+                        <a href="#" class="org-card-secondary">Descargar Memoria Anual (PDF)</a>
+                    </div>
+                </div>
+                <div class="org-card-media">
+                    <img src="imagenes/personas.png" alt="Brigada de reforestación Kallpa Iquitos">
+                    <span class="photo-tag-floating">Fotografía Verificada</span>
+                </div>
+            </article>
+
+            <article class="org-card-row">
+                <div class="org-card-content">
+                    <div class="org-card-top">
+                        <span class="audit-badge"><i class="fa-solid fa-circle-check"></i> Auditoría Social 98%</span>
+                        <span class="org-card-location">Cusco, Perú</span>
+                    </div>
+                    <h3><a href="organizacion.html">Asociación Sembrando Futuro Cusco</a></h3>
+                    <p>Organización comunitaria enfocada en la resiliencia climática de familias campesinas en cuencas altoandinas de Anta y Canchis. Desarrollamos zanjas de infiltración, cochas ancestrales para siembra de agua y tecnificación de invernaderos comunitarios escolares, beneficiando a más de 850 comuneros directos con transparencia en donaciones.</p>
+                    <div class="org-tags">
+                        <span class="org-tag"><i class="fa-solid fa-droplet"></i> Siembra de Agua</span>
+                        <span class="org-tag"><i class="fa-solid fa-mountain"></i> Zonas Altoandinas</span>
+                        <span class="org-tag"><i class="fa-solid fa-book"></i> Quechua & Saberes</span>
+                    </div>
+                    <div class="org-card-actions">
+                        <a href="organizacion.html" class="org-card-cta">Ver perfil y balance financiero →</a>
+                        <a href="#" class="org-card-secondary">Postular a Voluntariado</a>
+                    </div>
+                </div>
+                <div class="org-card-media">
+                    <img src="imagenes/personas.png" alt="Comuneros de Sembrando Futuro Cusco">
+                    <span class="photo-tag-floating">Fotografía Verificada</span>
+                </div>
+            </article>
+
+            <article class="org-card-row">
+                <div class="org-card-content">
+                    <div class="org-card-top">
+                        <span class="audit-badge"><i class="fa-solid fa-circle-check"></i> Auditoría Social 100%</span>
+                        <span class="org-card-location">Lima / Huancavelica, Perú</span>
+                    </div>
+                    <h3><a href="organizacion.html">Kusi Warma - Nutrición & Niñez</a></h3>
+                    <p>Acompañamiento directo a ollas comunes, comedores infantiles y huertos periurbanos. Proveemos suplementación nutricional, combate contra la anemia infantil y talleres de empoderamiento materno en zonas vulnerables. Presentamos rendición de cuentas trimestral georreferenciada con impacto auditado en más de 1,200 familias peruanas.</p>
+                    <div class="org-tags">
+                        <span class="org-tag"><i class="fa-solid fa-bowl-food"></i> Seguridad Alimentaria</span>
+                        <span class="org-tag"><i class="fa-solid fa-baby"></i> Primera Infancia</span>
+                        <span class="org-tag"><i class="fa-solid fa-chart-simple"></i> Cero Anemia</span>
+                    </div>
+                    <div class="org-card-actions">
+                        <a href="organizacion.html" class="org-card-cta">Ver perfil y balance financiero →</a>
+                        <a href="#" class="org-card-secondary">Ver Padrón de Donaciones</a>
+                    </div>
+                </div>
+                <div class="org-card-media">
+                    <img src="imagenes/personas.png" alt="Comedor infantil Kusi Warma">
+                    <span class="photo-tag-floating">Fotografía Verificada</span>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="no-results" id="noResults" hidden>
+            <i class="fa-solid fa-magnifying-glass-minus"></i>
+            <h3>No encontramos organizaciones</h3>
+            <p>Prueba con otra palabra clave, una región o una causa distinta (por ejemplo: "Amazonía", "nutrición" o "voluntariado").</p>
+        </div>
+
+        <div class="pagination-row" id="paginationRow">
+            <span>Página <strong>1</strong> de <strong>10</strong> (Total: 28 resultados)</span>
+            <div class="pagination-buttons">
+                <a href="#" class="page-btn disabled">Anterior</a>
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <span class="page-ellipsis">…</span>
+                <a href="#" class="page-btn">10</a>
+                <a href="#" class="page-btn">Siguiente</a>
+            </div>
+        </div>
+
+    </main>
+
+    <a href="#" class="assistant-fab"><i class="fa-solid fa-plus"></i> <span>¿Dudas con una ONG? Consulta al Asistente IA</span></a>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <i class="fa-solid fa-globe"></i> Impacto<strong>LOCAL</strong>
+            </div>
+            <p>Plataforma Cívica para la Transparencia del Tercer Sector en el Perú</p>
+            <div class="footer-links-right">
+                <a href="#">Código Ético</a>
+                <a href="#">Validación APCI & SUNAT</a>
+                <a href="#">Política de Datos</a>
+                <a href="#">Alianzas Académicas (IDEHPUCP & USMP)</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="#" class="report-link">Reportar irregularidad</a>
+            <p>© 2026 ImpactoLOCAL Perú. Iniciativa sin fines de lucro para el fortalecimiento democrático de la sociedad civil.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const form = document.getElementById('searchForm');
+            const input = document.getElementById('searchInput');
+            const cards = Array.from(document.querySelectorAll('#orgList .org-card-row'));
+            const noResults = document.getElementById('noResults');
+            const paginationRow = document.getElementById('paginationRow');
+            const resultsCountEl = document.getElementById('resultsCount');
+
+            // Texto buscable de cada tarjeta: título, ubicación, descripción y etiquetas.
+            const cardIndex = cards.map((card) => ({
+                card,
+                text: card.textContent.toLowerCase()
+            }));
+
+            function normalize(str) {
+                return str
+                    .toLowerCase()
+                    .normalize('NFD')
+                    .replace(/[\u0300-\u036f]/g, '');
+            }
+
+            function runSearch() {
+                const query = normalize(input.value.trim());
+                let visibleCount = 0;
+
+                cardIndex.forEach(({ card, text }) => {
+                    const matches = query === '' || normalize(text).includes(query);
+                    card.hidden = !matches;
+                    if (matches) visibleCount += 1;
+                });
+
+                noResults.hidden = visibleCount !== 0;
+                paginationRow.hidden = visibleCount === 0;
+
+                if (resultsCountEl) {
+                    resultsCountEl.textContent = query === ''
+                        ? '28 ONGs auditadas'
+                        : visibleCount + ' de 28 ONGs auditadas';
+                }
+            }
+
+            input.addEventListener('input', runSearch);
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                runSearch();
+            });
+        })();
+    </script>
+
+</body>
+</html>
